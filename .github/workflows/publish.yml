@@ -8,6 +8,7 @@ on:
 jobs:
   publish:
     runs-on: ubuntu-latest
+    if: "!contains(github.event.head_commit.message, 'chore: bump version')"
     permissions:
       contents: write
     steps:
@@ -33,10 +34,15 @@ jobs:
       - name: Bump version
         run: npm version patch --no-git-tag-version
 
+      - name: Get new version
+        id: version
+        run: echo "VERSION=$(node -p "require('./package.json').version")" >> $GITHUB_OUTPUT
+
       - name: Commit and push version bump
         run: |
           git add package.json package-lock.json 2>/dev/null || git add package.json
-          git commit -m "chore: bump version to $(node -p 'require(\"./package.json\").version')"
+          git commit -m "chore: bump version to ${{ steps.version.outputs.VERSION }}"
+          git pull --rebase
           git push
 
       - name: Publish to npm
