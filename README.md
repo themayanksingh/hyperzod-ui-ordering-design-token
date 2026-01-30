@@ -20,10 +20,15 @@ import tokens from 'hyperzod-ui-ordering-design-token';
 @import 'hyperzod-ui-ordering-design-token/css';
 ```
 
-**Tailwind:**
-```javascript
-const tokens = require('hyperzod-ui-ordering-design-token/tailwind');
+## Updating
+
+To get the latest version of the design tokens:
+
+```bash
+npm update hyperzod-ui-ordering-design-token
 ```
+
+A new version is published automatically whenever changes are merged to `main`.
 
 ## Tokens
 
