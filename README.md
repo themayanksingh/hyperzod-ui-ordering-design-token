@@ -32,6 +32,7 @@ const tokens = require('hyperzod-ui-ordering-design-token/tailwind');
 | Token | Value | Type |
 |-------|-------|------|
 | bg-light | `#FFFFFF` | color |
+| test-bg-light | `#C53E3E` | color |
 | bg-dark-strong | `#1A1A1A` | color |
 | bg-dark-medium | `#212121` | color |
 | bg-dark-subtle | `#282929` | color |
