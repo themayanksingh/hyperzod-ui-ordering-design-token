@@ -97,7 +97,7 @@
   --font-weight-bold-italic: Bold italic;
   /* === 1. Color Mode === */
   --colors-background-bg-light: #FFFFFF;
-  --colors-background-test-bg-light: #C53E3E;
+  --colors-background-test-bg-light: #111826;
   --colors-background-bg-dark-strong: #1A1A1A;
   --colors-background-bg-dark-medium: #212121;
   --colors-background-bg-dark-subtle: #282929;
@@ -168,7 +168,7 @@
 [data-theme='dark-mode'] {
   /* === 1. Color Mode === */
   --colors-background-bg-light: #47CD89;
-  --colors-background-test-bg-light: #2C35D6;
+  --colors-background-test-bg-light: #451616;
   --colors-background-bg-dark-strong: #47CD89;
   --colors-background-bg-dark-medium: #47CD89;
   --colors-background-bg-dark-subtle: #47CD89;
